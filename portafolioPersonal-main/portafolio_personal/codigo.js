@@ -61,5 +61,27 @@ boton.addEventListener("click",(e)=>{
     let container1=document.querySelector(".container5");
    container1.classList.toggle("ampliar2"); 
    let containerFotos=document.querySelector(".containerFotoHobby");
-   containerFotos.classList.toggle("vuelvaHobby")
+   containerFotos.classList.toggle("vuelvaHobby");
+   boton.classList.toggle("hobbysAmpliado");
+});
+
+
+let cotainerHobbyCaja=document.querySelector(".igual1");
+let cotainerHobbyCaja2=document.querySelector(".igual2");
+
+cotainerHobbyCaja.addEventListener("click",(e)=>{
+    cotainerHobbyCaja.classList.toggle("ampliarHobbys");
+    let parrafo=document.querySelector(".parrafoHobbyFutbol");
+    parrafo.classList.toggle("verHobby");
+    let baloncito=document.querySelector(".balon");
+    baloncito.classList.toggle("giratorio");
+});
+
+
+cotainerHobbyCaja2.addEventListener("click",(e)=>{
+    cotainerHobbyCaja2.classList.toggle("ampliarHobbys");
+    let parrafo=document.querySelector(".parrafoHobbyBicicleta");
+    parrafo.classList.toggle("verHobby2");
+    let bicicleta=document.querySelector(".bicicleta");
+    bicicleta.classList.toggle("giratorio2");
 });
